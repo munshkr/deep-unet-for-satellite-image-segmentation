@@ -5,6 +5,13 @@
 ## About this project
 This is a Keras based implementation of a deep UNet that performs satellite image segmentation.
 
+## Install
+
+```sh
+conda create -n deep-unet python=3
+conda install -c conda-forge keras tensorflow-gpu==1.14 tifffile
+```
+
 ## Dataset
 * The dataset consists of 8-band commercial grade satellite imagery taken from SpaceNet dataset.
 * Train collection contains few tiff files for each of the 24 locations.
