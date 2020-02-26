@@ -16,10 +16,12 @@ def normalize(img):
     return x
 
 
+images_path = '~/dym/lidar-research/data/chips/'
+images_gt_path = '~/dym/lidar-research/data/chips_gt/'
 
-N_BANDS = 8
-N_CLASSES = 5  # buildings, roads, trees, crops and water
-CLASS_WEIGHTS = [0.2, 0.3, 0.1, 0.1, 0.3]
+N_BANDS = 7
+N_CLASSES = 2  # non_buildings, buildings
+CLASS_WEIGHTS = [0.9, 0.1]
 N_EPOCHS = 150
 UPCONV = True
 PATCH_SZ = 160   # should divide by 16
